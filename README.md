@@ -58,6 +58,6 @@ personal-profile-webpage/
 ---
 
 ## **License**
-This project is open-source and available under the.
+This project is open-source and available under the GPL.
 
 ---
