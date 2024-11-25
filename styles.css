@@ -1,0 +1,268 @@
+/* Global Styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f3f4f9; /* Light greyish-blue background */
+  color: #555; /* Dark grey text */
+  overflow-x: hidden;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #4e8ec7; /* Soft pastel blue */
+  color: #fff;
+  padding: 70px 20px 50px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  margin: 10px 0;
+}
+
+header p {
+  font-size: 1.1rem;
+  margin: 0;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  object-fit: cover;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+  margin-top: 30px;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+}
+
+nav {
+  background: #4e8ec7; /* Same pastel blue */
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #f8a5b2; /* Soft pink on hover */
+}
+
+#toggle-btn {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+main {
+  padding: 120px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section {
+  background: #fff;
+  padding: 30px;
+  margin-bottom: 30px;
+  width: 80%;
+  max-width: 900px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+  transform: scale(1.03);
+}
+
+.skills-list {
+  list-style: none;
+  padding: 0;
+}
+
+.skills-list li {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9; /* Light grey background for project cards */
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.project-card h4 {
+  font-size: 1.4rem;
+  margin: 10px 0;
+}
+
+.project-card p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+.project-card a {
+  color: #4e8ec7; /* Soft pastel blue for links */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+/* Footer */
+footer {
+  background: #4e8ec7; /* Soft pastel blue */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Global Link Styles */
+a {
+  color: #4e8ec7; /* Soft pastel blue */
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect */
+a:hover {
+  color: #f8a5b2; /* Soft pink on hover */
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+/* Social Links Hover Effect */
+.social-link:hover {
+  color: #f8a5b2; /* Soft pink on hover */
+  text-decoration: underline;
+  transform: scale(1.05);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  nav.active ul {
+    display: flex;
+  }
+
+  main {
+    padding-top: 80px;
+  }
+
+  #toggle-btn {
+    display: block;
+  }
+
+  a {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  a {
+    font-size: 1rem;
+  }
+
+  section {
+    width: 95%;
+  }
+
+  .skills-list li,
+  .project-card h4 {
+    font-size: 1rem;
+  }
+}
+
+/* Space between LinkedIn and GitHub Links */
+#contact ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+#contact ul li {
+  list-style: none;
+}
+
+/* Contact Info Styling */
+.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-info li {
+  margin: 15px 0; /* Adds more space between each item */
+  font-size: 1.1rem;
+  display: block; /* Ensure each item appears on its own line */
+  line-height: 1.5; /* Add line spacing for readability */
+}
+
+.contact-info a {
+  color: #4e8ec7; /* Soft pastel blue for links */
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease; /* For smooth color change */
+}
+
+.contact-info a:hover {
+  color: #f8a5b2; /* Soft pink on hover */
+}
