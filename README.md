@@ -48,15 +48,6 @@ personal-profile-webpage/
 ├── profile.jpg      # Profile picture
 └── README.md        # Project documentation
 ```
-
----
-
-### Desktop View
-![Desktop View](https://via.placeholder.com/800x400?text=Desktop+View)
-
-### Mobile View
-![Mobile View](https://via.placeholder.com/400x800?text=Mobile+View)
-
 ---
 
 ## **Customization**
